@@ -1,36 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/globalvalue.css">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Home Page</title>
+    <title>Página Principal - Jornada</title>
 </head>
 <body>
 
-    <header>
+    <header aria-label="cabezera-de-pagina">
         <div>
-            <a href="#" title="Pagina principal de Jornada">
-                <img src="/img/logo-webSide.png" alt="logo del sitio web Jornada">
+            <a href="#" title="Página principal de Jornada">
+                <img src="/img/logo-webSide.png" alt="Logo del sitio web Jornada">
             </a>
 
             <nav>
                 <ul>
-                    <li>
-                        <a href="#" aria-label="enlace a blog de viajes">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="enlace a paquetes de viaje">Paquetes de viaje</a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="enlace de consultas">Contacto</a>
-                    </li>
+                    <li><a href="#" aria-label="Enlace al blog de viajes">Blog</a></li>
+                    <li><a href="#" aria-label="Enlace a paquetes de viaje">Paquetes de viaje</a></li>
+                    <li><a href="#" aria-label="Enlace de contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+
+    <section aria-label="sobre-nosotros">
+        <div>
+            <figure>
+                <img src="/img/banner-body.png" alt="Hombre navegando a través de un río en el bosque" style="width:100%">
+                <figcaption>
+                    Somos una agencia apasionada por crear viajes inolvidables. Desde el destino hasta la selección
+                    de actividades, nos encargamos de todos los detalles para que disfrutes al máximo cada momento 
+                    de tu jornada.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <main>
+
+        <section aria-label="ofertas-semanales">
+            <header>
+                <h2>Ofertas de la Semana</h2>
+                <hr>
+            </header>
+            <section>
+                <article>
+                    <figure>
+                        <img src="/img/card-promo1.png" alt="Imagen de Japón">
+                        <figcaption>
+                            <p>Hotel + Aéreo</p>
+                            <h3>Japón</h3>
+                            <p>Precio: $4000</p>
+                            <button>
+                                <a href="#">Ver detalles</a>
+                            </button>
+                        </figcaption>
+                    </figure>
+                </article>
+                
+                <article>
+                    <figure>
+                        <img src="/img/card-promo2.png" alt="Imagen de San Andrés">
+                        <figcaption>
+                            <p>Hotel + Aéreo</p>
+                            <h3>San Andrés</h3>
+                            <p>Precio: $3000</p>
+                            <button>
+                                <a href="#">Ver detalles</a>
+                            </button>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <div></div>
+
+            <section>
+                <article>
+                    <figure>
+                        <img src="/img/card-promo1.png" alt="Imagen de Japón">
+                        <figcaption>
+                            <p>Hotel + Aéreo</p>
+                            <h3>Japón</h3>
+                            <p>Precio: $4000</p>
+                            <button>
+                                <a href="#">Ver detalles</a>
+                            </button>
+                        </figcaption>
+                    </figure>
+                </article>
+                
+                <article>
+                    <figure>
+                        <img src="/img/card-promo2.png" alt="Imagen de San Andrés">
+                        <figcaption>
+                            <p>Hotel + Aéreo</p>
+                            <h3>San Andrés</h3>
+                            <p>Precio: $3000</p>
+                            <button>
+                                <a href="#">Ver detalles</a>
+                            </button>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+        </section>
+
+        <section aria-label="buscar-por-catergotia">
+            <header>
+                <h2>Buscar por Categoria</h2>
+                <hr>
+            </header>
+            
+            <ul>
+                <li>
+                    <figure>
+                        <img src="/img/icon-walkingMan.png" alt="Hombre practicando caminata" >
+                        <figcaption>Paquetes Nacionales</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="/img/icon-airplane.png" alt="Avión">
+                        <figcaption>Paquetes Internacionales</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="/img/icon-car.png" alt="Carro">
+                        <figcaption>Transfer</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="/img/icon-globe.png" alt="Globo terráqueo">
+                        <figcaption>Seguro de Viaje</figcaption>
+                    </figure>
+                </li>
+            </ul>
+
+        </section>
+
+        <section aria-label="destinos-populares">
+            <header>
+                <h2>Destinos Populares</h2>
+                <hr>
+            </header>
+
+            <section>
+
+                <ul>
+                    <li>
+                        <img src="/img/Tokyo.jpg" alt="Imagen de la ciudad de Tokio">
+                        <h3>Tokyo</h3>
+                        <p>
+                            Tokio es una ciudad vibrante y cosmopolita, con sus templos 
+                            históricos, museos de arte moderno y rascacielos icónicos. 
+                            No pierdas la oportunidad de sumergirte en su fascinante 
+                            atmósfera.
+                        </p>
+                        <button>
+                            <a href="#">Ver detalles</a>
+                        </button>
+                    </li>
+
+                    <li>
+                        <img src="/img/Osaka.jpg" alt="Imagen de la ciudad de Osaka">
+                        <h3>Osaka</h3>
+                        <p>
+                            Osaka es una ciudad animada y moderna en Japón. La ciudad es 
+                            famosa por su deliciosa gastronomía y por ser un excelente 
+                            punto de partida para explorar otras ciudades japonesas 
+                            cercanas.
+                        </p>
+                        <button>
+                            <a href="#">Ver detalles</a>
+                        </button>
+                    </li>
+                </ul>
+
+            </section>
+
+        </section>
+
+        <section aria-label="condiciones-de-pago">
+            <header>
+                <h2>Condiciones de Pago</h2>
+                <hr>
+            </header>
+
+            <article>
+                <section>
+                    <h3>!Pago a plazos de hasta 12 coutas</h3>
+                    <p>Viaja pagando en hasta 12 cuotas con tarjeta, el contado en credito con un descuento del 5%</p>
+                </section>
+                <div>
+                    <div>
+                        
+                    </div>
+                </div>
+            </article>
+            
+        </section>
+
+    </main>
+
 </body>
 </html>
