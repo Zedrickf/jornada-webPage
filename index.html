@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/globalvalue.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/globalvalue.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Página Principal - Jornada</title>
 </head>
-<body>
 
-    <header aria-label="cabezera-de-pagina">
-        <div>
+<body id="bodyContent">
+
+    <!-- Barra de navegacion principal -->
+    <header aria-labelledby="header-title" class="mainHeader">
+        <div class="mainHeader__logonavContainer">
             <a href="#" title="Página principal de Jornada">
-                <img src="/img/logo-webSide.png" alt="Logo del sitio web Jornada">
+                <img src="./img/logo-webSide.png" alt="Logo del sitio web Jornada" />
             </a>
 
             <nav>
-                <ul>
+                <ul class="mainHeader__navList">
                     <li><a href="#" aria-label="Enlace al blog de viajes">Blog</a></li>
                     <li><a href="#" aria-label="Enlace a paquetes de viaje">Paquetes de viaje</a></li>
                     <li><a href="#" aria-label="Enlace de contacto">Contacto</a></li>
@@ -26,187 +29,285 @@
         </div>
     </header>
 
-    <section aria-label="sobre-nosotros">
+    <!-- imagen y texto de presentacion -->
+    <section aria-labelledby="sobre-nosotros-title">
         <div>
-            <figure>
-                <img src="/img/banner-body.png" alt="Hombre navegando a través de un río en el bosque" style="width:100%">
-                <figcaption>
-                    Somos una agencia apasionada por crear viajes inolvidables. Desde el destino hasta la selección
-                    de actividades, nos encargamos de todos los detalles para que disfrutes al máximo cada momento 
-                    de tu jornada.
+            <figure class="bannerImg">
+                <img src="./img/banner-body.png" alt="Hombre navegando a través de un río en el bosque" style="width:100%" />
+                <figcaption class="bannerImg__figcap">
+                    <h2 id="sobre-nosotros-title" style="display: none">Sobre Nosotros</h2>
+                    <p>
+                        Somos una agencia apasionada por crear viajes inolvidables. Desde el destino hasta la selección
+                        de actividades, nos encargamos de todos los detalles para que disfrutes al máximo cada momento 
+                        de tu jornada.
+                    </p>
                 </figcaption>
             </figure>
         </div>
     </section>
 
-    <main>
+    <!-- Contenedor principal de la pagina -->
+    <main id="mainContent">
 
-        <section aria-label="ofertas-semanales">
-            <header>
-                <h2>Ofertas de la Semana</h2>
+        <!-- contenedor de seccion ofertas semanales -->
+        <section class="ofertaSem" aria-labelledby="ofertas-semanales">
+            
+            <header class="ofertaSem__titulo">
+                <h2 id="ofertas-semanales">Ofertas de la semana</h2>
                 <hr>
             </header>
-            <section>
+
+            <div class="ofertaSem__div">
                 <article>
-                    <figure>
-                        <img src="/img/card-promo1.png" alt="Imagen de Japón">
-                        <figcaption>
+                    <figure class="ofertaSem__fig">
+                        <img class="ofertaSem__fig--img" src="./img/card-promo1.png" alt="Promoción de Hotel + Aéreo en Japón" />
+                        <figcaption class="ofertaSem__fig--figcap">
                             <p>Hotel + Aéreo</p>
                             <h3>Japón</h3>
                             <p>Precio: $4000</p>
-                            <button>
-                                <a href="#">Ver detalles</a>
-                            </button>
+                            <a href="#" class="button">Ver detalles</a>
                         </figcaption>
                     </figure>
                 </article>
-                
+
                 <article>
-                    <figure>
-                        <img src="/img/card-promo2.png" alt="Imagen de San Andrés">
-                        <figcaption>
+                    <figure class="ofertaSem__fig">
+                        <img class="ofertaSem__fig--img" src="./img/card-promo2.png" alt="Promoción de Hotel + Aéreo en San Andrés" />
+                        <figcaption class="ofertaSem__fig--figcap">
                             <p>Hotel + Aéreo</p>
                             <h3>San Andrés</h3>
                             <p>Precio: $3000</p>
-                            <button>
-                                <a href="#">Ver detalles</a>
-                            </button>
+                            <a href="#" class="button">Ver detalles</a>
                         </figcaption>
                     </figure>
                 </article>
-            </section>
+            </div>
 
-            <div></div>
+            <div class="ofertaSem__div--separador"></div>
 
-            <section>
+            <div class="ofertaSem__div">
                 <article>
-                    <figure>
-                        <img src="/img/card-promo1.png" alt="Imagen de Japón">
-                        <figcaption>
+                    <figure class="ofertaSem__fig">
+                        <img class="ofertaSem__fig--img" src="./img/card-promo1.png" alt="Promoción de Hotel + Aéreo en Japón" />
+                        <figcaption class="ofertaSem__fig--figcap">
                             <p>Hotel + Aéreo</p>
                             <h3>Japón</h3>
                             <p>Precio: $4000</p>
-                            <button>
-                                <a href="#">Ver detalles</a>
-                            </button>
+                            <a href="#" class="button">Ver detalles</a>
                         </figcaption>
                     </figure>
                 </article>
-                
+
                 <article>
-                    <figure>
-                        <img src="/img/card-promo2.png" alt="Imagen de San Andrés">
-                        <figcaption>
+                    <figure class="ofertaSem__fig">
+                        <img class="ofertaSem__fig--img" src="./img/card-promo2.png" alt="Promoción de Hotel + Aéreo en San Andrés" />
+                        <figcaption class="ofertaSem__fig--figcap">
                             <p>Hotel + Aéreo</p>
                             <h3>San Andrés</h3>
                             <p>Precio: $3000</p>
-                            <button>
-                                <a href="#">Ver detalles</a>
-                            </button>
+                            <a href="#" class="button">Ver detalles</a>
                         </figcaption>
                     </figure>
                 </article>
-            </section>
+
+            </div>
         </section>
 
-        <section aria-label="buscar-por-catergotia">
+        <section aria-labelledby="buscar-por-categoria">
             <header>
-                <h2>Buscar por Categoria</h2>
+                <h2 id="buscar-por-categoria">Buscar por Categoría</h2>
                 <hr>
             </header>
             
             <ul>
                 <li>
                     <figure>
-                        <img src="/img/icon-walkingMan.png" alt="Hombre practicando caminata" >
+                        <img src="./img/icon-walkingMan.png" alt="Icono de un hombre practicando caminata" />
                         <figcaption>Paquetes Nacionales</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
-                        <img src="/img/icon-airplane.png" alt="Avión">
+                        <img src="./img/icon-airplane.png" alt="Icono de un avión" />
                         <figcaption>Paquetes Internacionales</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
-                        <img src="/img/icon-car.png" alt="Carro">
+                        <img src="./img/icon-car.png" alt="Icono de un carro" />
                         <figcaption>Transfer</figcaption>
                     </figure>
                 </li>
                 <li>
                     <figure>
-                        <img src="/img/icon-globe.png" alt="Globo terráqueo">
+                        <img src="./img/icon-globe.png" alt="Icono de un globo terráqueo" />
                         <figcaption>Seguro de Viaje</figcaption>
                     </figure>
                 </li>
             </ul>
-
         </section>
 
-        <section aria-label="destinos-populares">
+        <section aria-labelledby="destinos-populares">
             <header>
-                <h2>Destinos Populares</h2>
+                <h2 id="destinos-populares">Destinos Populares</h2>
                 <hr>
             </header>
 
-            <section>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="./img/Tokyo.jpg" alt="Vista de la ciudad de Tokio" />
+                        <figcaption>
+                            <h3>Tokyo</h3>
+                            <p>
+                                Tokio es una ciudad vibrante y cosmopolita, con sus templos 
+                                históricos, museos de arte moderno y rascacielos icónicos. 
+                                No pierdas la oportunidad de sumergirte en su fascinante 
+                                atmósfera.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <a href="#" class="button">Ver detalles</a>
+                </li>
 
-                <ul>
-                    <li>
-                        <img src="/img/Tokyo.jpg" alt="Imagen de la ciudad de Tokio">
-                        <h3>Tokyo</h3>
-                        <p>
-                            Tokio es una ciudad vibrante y cosmopolita, con sus templos 
-                            históricos, museos de arte moderno y rascacielos icónicos. 
-                            No pierdas la oportunidad de sumergirte en su fascinante 
-                            atmósfera.
-                        </p>
-                        <button>
-                            <a href="#">Ver detalles</a>
-                        </button>
-                    </li>
-
-                    <li>
-                        <img src="/img/Osaka.jpg" alt="Imagen de la ciudad de Osaka">
-                        <h3>Osaka</h3>
-                        <p>
-                            Osaka es una ciudad animada y moderna en Japón. La ciudad es 
-                            famosa por su deliciosa gastronomía y por ser un excelente 
-                            punto de partida para explorar otras ciudades japonesas 
-                            cercanas.
-                        </p>
-                        <button>
-                            <a href="#">Ver detalles</a>
-                        </button>
-                    </li>
-                </ul>
-
-            </section>
-
+                <li>
+                    <figure>
+                        <img src="./img/Osaka.jpg" alt="Vista de la ciudad de Osaka" />
+                        <figcaption>
+                            <h3>Osaka</h3>
+                            <p>
+                                Osaka es una ciudad animada y moderna en Japón. La ciudad es 
+                                famosa por su deliciosa gastronomía y por ser un excelente 
+                                punto de partida para explorar otras ciudades japonesas 
+                                cercanas.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <a href="#" class="button">Ver detalles</a>
+                </li>
+            </ul>
         </section>
 
-        <section aria-label="condiciones-de-pago">
+        <section aria-labelledby="condiciones-pago">
             <header>
-                <h2>Condiciones de Pago</h2>
+                <h2 id="condiciones-pago">Condiciones de Pago</h2>
                 <hr>
             </header>
 
             <article>
-                <section>
-                    <h3>!Pago a plazos de hasta 12 coutas</h3>
-                    <p>Viaja pagando en hasta 12 cuotas con tarjeta, el contado en credito con un descuento del 5%</p>
+                <section aria-labelledby="pago-plazos">
+                    <h3 id="pago-plazos">¡Pago a plazos de hasta 12 cuotas!</h3>
+                    <p>Viaja pagando en hasta 12 cuotas con tarjeta. El contado en crédito tiene un descuento del 5%.</p>
                 </section>
-                <div>
+                <figure>
                     <div>
-                        
+                        <img src="./img/paymentCon1.png" alt="Equipaje abierto" />
+                        <img src="./img/paymentCon2.png" alt="Dos personas exhibiendo sus pasaportes" />
                     </div>
-                </div>
+                    
+                    <div>
+                        <img src="./img/paymentCon3.png" alt="Dos personas tomándose una foto de espaldas" />
+                    </div>
+                </figure>
             </article>
-            
+        </section>
+        
+        <section aria-labelledby="testimonios">
+            <header>
+                <h2 id="testimonios">Testimonios</h2>
+                <hr>
+            </header>
+
+            <div>
+                <section>
+                    <p>
+                        La Jornada ha sido una de las mejores agencias de viajes que he experimentado. 
+                        El servicio al cliente fue excepcional, y todo el equipo fue muy atento y servicial
+                    </p>
+                    <figure>
+                        <img src="./img/avatar-Mara.png" alt="Imagen del avatar del usuario Mara">
+                        <figcaption>
+                            <h3>Mara Lopes</h3>
+                            <div>
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <section>
+                    <p>
+                        Te recominedo firmemente la agencia de viajes Jornada. 
+                        Ofrecen un servicio personalizado y de alta calidad que superó mis 
+                        expectativas en mi ultimo viaje.
+                    </p>
+                    <figure>
+                        <img src="./img/avatar-Amari.png" alt="Imagen del avatar del usuario Amari">
+                        <figcaption>
+                            <h3>Amari Salin</h3>
+                            <div>
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <section>
+                    <p>
+                        ¡Mi viaje con la Jornada fue increible! Te la recomiendo mucho su buscas una experiencia emocionante y personalizada.
+                    </p>
+                    <figure>
+                        <img src="./img/avatar-Lauro.png" alt="Imagen del avatar del usuario Lauro">
+                        <figcaption>
+                            <h3>Lauro B. Matos</h3>
+                            <div>
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                                <img src="./img/Star5.png" alt="Icono de estrella de puntuacion">
+                            </div>
+                        </figcaption>
+                    </figure>
+                </section>                
+
+            </div>
         </section>
 
     </main>
 
+    <section aria-label="imagen-footer">
+        <div>
+            <figure>
+                <img src="./img/Image-footer.png" alt="Vista a la costa de una ciudad" style="width:100%" />
+            </figure>
+        </div>
+    </section>
+    
+    <footer>
+        <section>
+            <h4>Horario de Atencion: 08h - 20h (Lunes a Sabado).</h4>
+            <h4>Desarrollado por Anthony Marin. Proyecto ficticio sin fines de lucro.</h4>
+        </section>
+
+        <figure>
+            <figcaption>Accede a nuestras redes sociales</figcaption>
+            <div>
+                <img src="./img/iconWhatsapp.png" alt="Logo de Whatsapp">
+                <img src="./img/iconInstragam.png" alt="Logo de Instagram">
+                <img src="./img/iconTwiter.png" alt="Logo de X">
+            </div>
+        </figure>
+    </footer>
+
 </body>
+
 </html>
