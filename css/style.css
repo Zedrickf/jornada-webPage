@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-/*  Barra de navegacion principal  */
+/*  CONTENEDOR DE BARRA NAVEGACION  */
 .mainHeader {
     background-color: var(--black);
     width: 100%;
@@ -37,7 +37,7 @@
     color: var(--white);
 }
 
-/*  imagen y texto de presentacion  */
+/*  CONTENEDOR IMAGEN DE PRESENTACION  */
 .bannerImg {
     width: 100%;
     margin: 0;
@@ -57,7 +57,7 @@
     font-weight: 400;
 }
 
-/*  contenedor principal de la pagina  */
+/*  CONTENEDOR MAIN   */
 #mainContent {
     border: 2px solid red;
     width: var(--anchoGeneral);
@@ -66,7 +66,7 @@
     align-items: center;
 }
 
-/*  contenedor de seccion ofertar semnanales  */
+/*  CONTENEDOR OFERTAS SEMANALES  */
 .ofertaSem {
     border: 2px solid blue;
     width: 100%;
@@ -75,29 +75,31 @@
     align-items: center;
 }
 
-.ofertaSem__titulo {
-    border: 2px solid red;
+.headerSection {
     margin-bottom: 25px;
+    text-align: center;
 }
 
-.ofertaSem__titulo h2 {
+.headerSection--titulo {
+    margin: 10px;
     font-size: 32px;
 }
 
-.ofertaSem__titulo hr {
+.headerSection--hr {
     width: 180px;
-    height: 3px;
-    color: var(--red);
+    height: 4px;
+    border: none;
     background-color: var(--red);
 }
 
 .ofertaSem__div {
     display: flex;
+    gap: 25px;
 }
 
 .ofertaSem__fig {
-    border: 2px solid red;
     position: relative;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,10 +117,63 @@
     position: absolute;
     z-index: 5;
     top: 0;
+    text-align: center;
+}
+
+.ofertaSem__fig--titulo, .ofertaSem__fig--price {
+    font-weight: 600;
+    margin: 10px 0;
 
 }
 
+.ofertaSem__fig--titulo {
+    font-size: 32px;
+}
+
+.ofertaSem__fig--price {
+    font-size: 28px;
+}
+
+.ofertaSem__fig--button {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--red);
+    display: inline-block;
+    width: 180px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+
+/*  separador de div de la seccion oferta  */
 .ofertaSem__div--separador {
     width: 100%;
     height: 308px;
+}
+
+/*  separador entre seccion oferta y buscar catergoria  */
+.mainContent__div {
+    width: 100%;
+    height: 250px;    
+}
+
+/*  CONTENEDOR BUSCAR CATEGORIA  */
+.buscarCategoria {
+    border: 2px solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buscarCategoria__ul {
+    border: 2px solid blue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

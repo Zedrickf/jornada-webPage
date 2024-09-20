@@ -12,7 +12,7 @@
 
 <body id="bodyContent">
 
-    <!-- Barra de navegacion principal -->
+    <!-- CONTENEDOR DE BARRA NAVEGACION -->
     <header aria-labelledby="header-title" class="mainHeader">
         <div class="mainHeader__logonavContainer">
             <a href="#" title="Página principal de Jornada">
@@ -29,7 +29,7 @@
         </div>
     </header>
 
-    <!-- imagen y texto de presentacion -->
+    <!-- CONTENEDOR IMAGEN DE PRESENTACION -->
     <section aria-labelledby="sobre-nosotros-title">
         <div>
             <figure class="bannerImg">
@@ -46,15 +46,15 @@
         </div>
     </section>
 
-    <!-- Contenedor principal de la pagina -->
+    <!-- CONTENEDOR MAIN -->
     <main id="mainContent">
 
-        <!-- contenedor de seccion ofertas semanales -->
+        <!-- CONTENEDOR OFERTAS SEMANALES -->
         <section class="ofertaSem" aria-labelledby="ofertas-semanales">
             
-            <header class="ofertaSem__titulo">
-                <h2 id="ofertas-semanales">Ofertas de la semana</h2>
-                <hr>
+            <header class="headerSection">
+                <h2 id="ofertas-semanales" class="headerSection--titulo">Ofertas de la semana</h2>
+                <hr class="headerSection--hr">
             </header>
 
             <div class="ofertaSem__div">
@@ -63,9 +63,9 @@
                         <img class="ofertaSem__fig--img" src="./img/card-promo1.png" alt="Promoción de Hotel + Aéreo en Japón" />
                         <figcaption class="ofertaSem__fig--figcap">
                             <p>Hotel + Aéreo</p>
-                            <h3>Japón</h3>
-                            <p>Precio: $4000</p>
-                            <a href="#" class="button">Ver detalles</a>
+                            <h3 class="ofertaSem__fig--titulo">Japón</h3>
+                            <p class="ofertaSem__fig--price">$ 4000</p>
+                            <a href="#" class="ofertaSem__fig--button">Ver detalles</a>
                         </figcaption>
                     </figure>
                 </article>
@@ -75,14 +75,15 @@
                         <img class="ofertaSem__fig--img" src="./img/card-promo2.png" alt="Promoción de Hotel + Aéreo en San Andrés" />
                         <figcaption class="ofertaSem__fig--figcap">
                             <p>Hotel + Aéreo</p>
-                            <h3>San Andrés</h3>
-                            <p>Precio: $3000</p>
-                            <a href="#" class="button">Ver detalles</a>
+                            <h3 class="ofertaSem__fig--titulo">San Andrés</h3>
+                            <p class="ofertaSem__fig--price">$ 3000</p>
+                            <a href="#" class="ofertaSem__fig--button">Ver detalles</a>
                         </figcaption>
                     </figure>
                 </article>
             </div>
 
+            <!-- separador de div de la seccion oferta -->
             <div class="ofertaSem__div--separador"></div>
 
             <div class="ofertaSem__div">
@@ -91,9 +92,9 @@
                         <img class="ofertaSem__fig--img" src="./img/card-promo1.png" alt="Promoción de Hotel + Aéreo en Japón" />
                         <figcaption class="ofertaSem__fig--figcap">
                             <p>Hotel + Aéreo</p>
-                            <h3>Japón</h3>
-                            <p>Precio: $4000</p>
-                            <a href="#" class="button">Ver detalles</a>
+                            <h3 class="ofertaSem__fig--titulo">Japón</h3>
+                            <p class="ofertaSem__fig--price">$ 4000</p>
+                            <a href="#" class="ofertaSem__fig--button">Ver detalles</a>
                         </figcaption>
                     </figure>
                 </article>
@@ -103,23 +104,26 @@
                         <img class="ofertaSem__fig--img" src="./img/card-promo2.png" alt="Promoción de Hotel + Aéreo en San Andrés" />
                         <figcaption class="ofertaSem__fig--figcap">
                             <p>Hotel + Aéreo</p>
-                            <h3>San Andrés</h3>
-                            <p>Precio: $3000</p>
-                            <a href="#" class="button">Ver detalles</a>
+                            <h3 class="ofertaSem__fig--titulo">San Andrés</h3>
+                            <p class="ofertaSem__fig--price">$ 3000</p>
+                            <a href="#" class="ofertaSem__fig--button">Ver detalles</a>
                         </figcaption>
                     </figure>
                 </article>
-
             </div>
         </section>
 
-        <section aria-labelledby="buscar-por-categoria">
-            <header>
-                <h2 id="buscar-por-categoria">Buscar por Categoría</h2>
-                <hr>
+        <!-- separador entre seccion oferta y buscar catergoria -->
+        <div class="mainContent__div"></div>
+
+        <!-- CONTENEDOR BUSCAR CATEGORIA -->
+        <section class="buscarCategoria" aria-labelledby="buscar-por-categoria">
+            <header class="headerSection">
+                <h2 id="buscar-por-categoria" class="headerSection--titulo">Buscar por Categoría</h2>
+                <hr class="headerSection--hr">
             </header>
             
-            <ul>
+            <ul class="buscarCategoria__ul">
                 <li>
                     <figure>
                         <img src="./img/icon-walkingMan.png" alt="Icono de un hombre practicando caminata" />
@@ -148,9 +152,9 @@
         </section>
 
         <section aria-labelledby="destinos-populares">
-            <header>
-                <h2 id="destinos-populares">Destinos Populares</h2>
-                <hr>
+            <header class="headerSection">
+                <h2 id="destinos-populares" class="headerSection--titulo">Destinos Populares</h2>
+                <hr class="headerSection--hr">
             </header>
 
             <ul>
@@ -189,9 +193,9 @@
         </section>
 
         <section aria-labelledby="condiciones-pago">
-            <header>
-                <h2 id="condiciones-pago">Condiciones de Pago</h2>
-                <hr>
+            <header class="headerSection">
+                <h2 id="condiciones-pago" class="headerSection--titulo">Condiciones de Pago</h2>
+                <hr class="headerSection--hr">
             </header>
 
             <article>
