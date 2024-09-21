@@ -62,7 +62,7 @@
                     <figure class="ofertaSem__fig">
                         <img class="ofertaSem__fig--img" src="./img/card-promo1.png" alt="Promoción de Hotel + Aéreo en Japón" />
                         <figcaption class="ofertaSem__fig--figcap">
-                            <p>Hotel + Aéreo</p>
+                            <p class="ofertaSem__fig--ha">Hotel + Aéreo</p>
                             <h3 class="ofertaSem__fig--titulo">Japón</h3>
                             <p class="ofertaSem__fig--price">$ 4000</p>
                             <a href="#" class="ofertaSem__fig--button">Ver detalles</a>
@@ -74,7 +74,7 @@
                     <figure class="ofertaSem__fig">
                         <img class="ofertaSem__fig--img" src="./img/card-promo2.png" alt="Promoción de Hotel + Aéreo en San Andrés" />
                         <figcaption class="ofertaSem__fig--figcap">
-                            <p>Hotel + Aéreo</p>
+                            <p class="ofertaSem__fig--ha">Hotel + Aéreo</p>
                             <h3 class="ofertaSem__fig--titulo">San Andrés</h3>
                             <p class="ofertaSem__fig--price">$ 3000</p>
                             <a href="#" class="ofertaSem__fig--button">Ver detalles</a>
@@ -83,47 +83,13 @@
                 </article>
             </div>
 
-            <!-- separador de div de la seccion oferta -->
-            <div class="ofertaSem__div--separador"></div>
-
-            <header class="headerSection">
-                <h2 id="ofertas-semanales" class="headerSection--titulo">Ofertas de la semana</h2>
-                <hr class="headerSection--hr">
-            </header>
-
-            <!-- ofertas semanales opacas -->
-            <div class="ofertaSem__div">
-                <article>
-                    <figure class="ofertaSem__fig">
-                        <img class="ofertaSem__fig--img imgDark" src="./img/card-promo1.png" alt="Promoción de Hotel + Aéreo en Japón" />
-                        <figcaption class="ofertaSem__fig--figcap">
-                            <p>Hotel + Aéreo</p>
-                            <h3 class="ofertaSem__fig--titulo">Japón</h3>
-                            <p class="ofertaSem__fig--price">$ 4000</p>
-                            <a href="#" class="ofertaSem__fig--button">Ver detalles</a>
-                        </figcaption>
-                    </figure>
-                </article>
-
-                <article>
-                    <figure class="ofertaSem__fig">
-                        <img class="ofertaSem__fig--img imgDark" src="./img/card-promo2.png" alt="Promoción de Hotel + Aéreo en San Andrés" />
-                        <figcaption class="ofertaSem__fig--figcap">
-                            <p>Hotel + Aéreo</p>
-                            <h3 class="ofertaSem__fig--titulo">San Andrés</h3>
-                            <p class="ofertaSem__fig--price">$ 3000</p>
-                            <a href="#" class="ofertaSem__fig--button">Ver detalles</a>
-                        </figcaption>
-                    </figure>
-                </article>
-            </div>
         </section>
 
         <!-- separador entre seccion oferta y buscar catergoria -->
         <div class="mainContent__div"></div>
 
         <!-- CONTENEDOR BUSCAR CATEGORIA -->
-        <section class="buscarCategoria" aria-labelledby="buscar-por-categoria">
+        <section class="buscarCategoria sectionGeneral" aria-labelledby="buscar-por-categoria">
             <header class="headerSection">
                 <h2 id="buscar-por-categoria" class="headerSection--titulo">Buscar por Categoría</h2>
                 <hr class="headerSection--hr">
@@ -166,19 +132,19 @@
         </section>
 
         <!-- CONTENEDOR DESTINOS POPULARES -->
-        <section aria-labelledby="destinos-populares">
+        <section class="destinosP sectionGeneral" aria-labelledby="destinos-populares">
             <header class="headerSection">
                 <h2 id="destinos-populares" class="headerSection--titulo">Destinos Populares</h2>
                 <hr class="headerSection--hr">
             </header>
 
-            <ul>
-                <li>
+            <ul class="destinosP__ul">
+                <li class="destinosP__li">
                     <figure>
-                        <img src="./img/Tokyo.jpg" alt="Vista de la ciudad de Tokio" />
-                        <figcaption>
-                            <h3>Tokyo</h3>
-                            <p>
+                        <img class="destinosP__image" src="./img/Tokyo.jpg" alt="Vista de la ciudad de Tokio" />
+                        <figcaption class="destinosP__caption">
+                            <h3 class="destinosP__title">Tokyo</h3>
+                            <p class="destinosP__text">
                                 Tokio es una ciudad vibrante y cosmopolita, con sus templos 
                                 históricos, museos de arte moderno y rascacielos icónicos. 
                                 No pierdas la oportunidad de sumergirte en su fascinante 
@@ -186,15 +152,15 @@
                             </p>
                         </figcaption>
                     </figure>
-                    <a href="#" class="button">Ver detalles</a>
+                    <a href="#" class="destinosP__button">Ver detalles</a>
                 </li>
 
-                <li>
+                <li class="destinosP__li">
                     <figure>
-                        <img src="./img/Osaka.jpg" alt="Vista de la ciudad de Osaka" />
-                        <figcaption>
-                            <h3>Osaka</h3>
-                            <p>
+                        <img class="destinosP__image" src="./img/Osaka.jpg" alt="Vista de la ciudad de Osaka" />
+                        <figcaption class="destinosP__caption">
+                            <h3 class="destinosP__title">Osaka</h3>
+                            <p class="destinosP__text">
                                 Osaka es una ciudad animada y moderna en Japón. La ciudad es 
                                 famosa por su deliciosa gastronomía y por ser un excelente 
                                 punto de partida para explorar otras ciudades japonesas 
@@ -202,24 +168,25 @@
                             </p>
                         </figcaption>
                     </figure>
-                    <a href="#" class="button">Ver detalles</a>
+                    <a href="#" class="destinosP__button">Ver detalles</a>
                 </li>
             </ul>
         </section>
 
-        <section aria-labelledby="condiciones-pago">
+        <!-- CONTENEDOR CONDICIONES DE PAGO -->
+        <section class="sectionGeneral" aria-labelledby="condiciones-pago">
             <header class="headerSection">
                 <h2 id="condiciones-pago" class="headerSection--titulo">Condiciones de Pago</h2>
                 <hr class="headerSection--hr">
             </header>
 
-            <article>
-                <section aria-labelledby="pago-plazos">
-                    <h3 id="pago-plazos">¡Pago a plazos de hasta 12 cuotas!</h3>
-                    <p>Viaja pagando en hasta 12 cuotas con tarjeta. El contado en crédito tiene un descuento del 5%.</p>
+            <article class="condicionesP">
+                <section class="condicionesP__sect" aria-labelledby="pago-plazos">
+                    <h3 class="condicionesP__title" id="pago-plazos">"¡Pago a plazos de hasta 12 cuotas!"</h3>
+                    <p class="condicionesP__text">Viaja pagando en hasta 12 cuotas con tarjeta. El contado en crédito tiene un descuento del 5%.</p>
                 </section>
-                <figure>
-                    <div>
+                <figure class="condicionesP__fig">
+                    <div class="condicionesP__div">
                         <img src="./img/paymentCon1.png" alt="Equipaje abierto" />
                         <img src="./img/paymentCon2.png" alt="Dos personas exhibiendo sus pasaportes" />
                     </div>
@@ -231,7 +198,7 @@
             </article>
         </section>
         
-        <section aria-labelledby="testimonios">
+        <section class="sectionGeneral" aria-labelledby="testimonios">
             <header class="headerSection">
                 <h2 id="testimonios" class="headerSection--titulo">Testimonios</h2>
                 <hr class="headerSection--hr">

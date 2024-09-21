@@ -30,7 +30,7 @@
 }
 
 .mainHeader__imgJornada {
-    width: 95%;
+    width: 75%;
 }
 
 .mainHeader__navList {
@@ -49,7 +49,6 @@
 /*  CONTENEDOR IMAGEN DE PRESENTACION  */
 .bannerImg {
     width: 100%;
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,10 +79,21 @@
     align-items: center;
 }
 
+/*  estilos para todos los contenedores  */
+.sectionGeneral {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 112px;
+}
+
 /*  estilos para los encabezados de cada seccion  */
 .headerSection {
     margin-bottom: 54px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .headerSection--titulo {
@@ -113,7 +123,6 @@
 
 .ofertaSem__fig {
     position: relative;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,8 +130,8 @@
 
 .ofertaSem__fig--img {
     position: relative;
-    width: 475px;
-    height: 225px;
+    width: 588px;
+    height: 308px;
     z-index: 1;
 }
 
@@ -130,8 +139,16 @@
     color: var(--white);
     position: absolute;
     z-index: 5;
-    top: 0;
+    top: 24px;
+    height: 260px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ofertaSem__fig--ha{
+    font-size: var(--generalFont);
 }
 
 .ofertaSem__fig--titulo, .ofertaSem__fig--price {
@@ -141,37 +158,25 @@
 }
 
 .ofertaSem__fig--titulo {
-    font-size: var(--titleFont);
+    font-size: 3rem;
 }
 
 .ofertaSem__fig--price {
-    font-size: var(--elementFont);
+    font-size: 2.5rem;
 }
 
-.ofertaSem__fig--button {
+.ofertaSem__fig--button, .destinosP__button {
     font-size: var(--generalFont);
     font-weight: 600;
     text-align: center;
     color: var(--white);
     background-color: var(--red);
-    width: 11.25rem;
-    height: 2.8125rem;
+    width: 17.5rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-}
-
-
-/*  separador de div de la seccion oferta  */
-.ofertaSem__div--separador {
-    width: 100%;
-    height: 308px;
-}
-
-/*  ofertas semanales opacas  */
-.imgDark {
-    filter: brightness(35%);
 }
 
 /*  separador entre seccion oferta y buscar catergoria  */
@@ -181,25 +186,16 @@
 }
 
 /*  CONTENEDOR BUSCAR CATEGORIA  */
-.buscarCategoria {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 112px;
-}
-
 .buscarCategoria__ul {
     width: 100%;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
 }
 
 .buscarCategoria__li {
     background-color: var(--darkWhite);
-    width: 220.25px;
+    width: 270.25px;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -207,7 +203,6 @@
 }
 
 .buscarCategoria__figure {
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,4 +222,64 @@
     font-weight: bold;
     text-align: center;
     color: var(--black);
+}
+
+/*  CONTENEDOR DESTINOS POPULARES  */
+.destinosP__ul {
+    display: flex;
+    gap: 24px;
+}
+
+.destinosP__li {
+    width: 595px;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.destinosP__image {
+    margin-bottom: 24px;
+}
+
+.destinosP__caption {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.destinosP__title, .condicionesP__title {
+    font-size: var(--elementFont);
+}
+
+.destinosP__text, .condicionesP__text {
+    font-size: var(--generalFont);
+}
+
+/*  CONTENEDOR CONDICIONES DE PAGO  */
+.condicionesP {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.condicionesP__sect {
+    width: 384px;
+    height: 188px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.condicionesP__fig {
+    width: 790px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.condicionesP__div {
+    display: flex;
+    gap: 24px;
 }
