@@ -9,7 +9,7 @@
 .mainHeader {
     background-color: var(--black);
     width: 100%;
-    height: 138px;
+    height: 6.25rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -24,15 +24,24 @@
     align-items: center;
 }
 
+.mainHeader__aLink {
+    width: 25%;
+    height: 65px;
+}
+
+.mainHeader__imgJornada {
+    width: 95%;
+}
+
 .mainHeader__navList {
     margin: 0 5px;
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
 
 }
 
 .mainHeader__navList a {
-    font-size: 24px;
+    font-size: var(--subTitleFont);
     font-weight: 500;
     color: var(--white);
 }
@@ -46,6 +55,11 @@
     align-items: center;
 }
 
+.bannerImg__image {
+    width: 100%;
+    height: 50.889vh;
+}
+
 .bannerImg__figcap {
     margin: 92px 0;
     width: var(--anchoGeneral);
@@ -53,7 +67,7 @@
 
 .bannerImg__figcap p {
     text-align: center;
-    font-size: 32px;
+    font-size: var(--titleFont);
     font-weight: 400;
 }
 
@@ -66,30 +80,30 @@
     align-items: center;
 }
 
-/*  CONTENEDOR OFERTAS SEMANALES  */
-.ofertaSem {
-    border: 2px solid blue;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/*  estilos para los encabezados de cada seccion  */
 .headerSection {
-    margin-bottom: 25px;
+    margin-bottom: 54px;
     text-align: center;
 }
 
 .headerSection--titulo {
     margin: 10px;
-    font-size: 32px;
+    font-size: var(--titleFont);
 }
 
 .headerSection--hr {
-    width: 180px;
-    height: 4px;
+    width: 11.25rem;
+    height: 0.25rem;
     border: none;
     background-color: var(--red);
+}
+
+/*  CONTENEDOR OFERTAS SEMANALES  */
+.ofertaSem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .ofertaSem__div {
@@ -107,8 +121,8 @@
 
 .ofertaSem__fig--img {
     position: relative;
-    width: 428px;
-    height: 215px;
+    width: 475px;
+    height: 225px;
     z-index: 1;
 }
 
@@ -127,22 +141,21 @@
 }
 
 .ofertaSem__fig--titulo {
-    font-size: 32px;
+    font-size: var(--titleFont);
 }
 
 .ofertaSem__fig--price {
-    font-size: 28px;
+    font-size: var(--elementFont);
 }
 
 .ofertaSem__fig--button {
-    font-size: 16px;
+    font-size: var(--generalFont);
     font-weight: 600;
     text-align: center;
     color: var(--white);
     background-color: var(--red);
-    display: inline-block;
-    width: 180px;
-    height: 45px;
+    width: 11.25rem;
+    height: 2.8125rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,6 +169,11 @@
     height: 308px;
 }
 
+/*  ofertas semanales opacas  */
+.imgDark {
+    filter: brightness(35%);
+}
+
 /*  separador entre seccion oferta y buscar catergoria  */
 .mainContent__div {
     width: 100%;
@@ -164,16 +182,49 @@
 
 /*  CONTENEDOR BUSCAR CATEGORIA  */
 .buscarCategoria {
-    border: 2px solid red;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 112px;
 }
 
 .buscarCategoria__ul {
-    border: 2px solid blue;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buscarCategoria__li {
+    background-color: var(--darkWhite);
+    width: 220.25px;
+    height: 200px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.buscarCategoria__figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.buscarCategoria__image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.buscarCategoria__caption {
+    width: 210.25px;
+    height: 60px;
+    font-size: var(--elementFont);
+    font-weight: bold;
+    text-align: center;
+    color: var(--black);
 }
