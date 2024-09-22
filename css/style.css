@@ -478,7 +478,7 @@
     }
 
     .mainHeader__imgJornada {
-        content: url('/img/logo-webSite_mobile.png');
+        content: url('./img/logo-webSite_mobile.png');
         width: 80%;
     }
 
