@@ -22,15 +22,12 @@
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
+    position: relative;
 }
 
 .mainHeader__aLink {
     width: 25%;
     height: 65px;
-}
-
-.mainHeader__imgJornada {
-    width: 65%;
 }
 
 .mainHeader__navList {
@@ -44,6 +41,8 @@
     font-size: var(--elementF__1-45);
     font-weight: 500;
     color: var(--white);
+    display: inline-block;
+    width: 100%;
 }
 
 /*  CONTENEDOR IMAGEN DE PRESENTACION  */
@@ -204,6 +203,7 @@
     display: flex;
     justify-content: center;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .buscarCategoria__li {
@@ -214,6 +214,7 @@
     border-radius: 5px;
     display: flex;
     justify-content: center;
+    flex: 1 1 calc(25% - 24px);
 }
 
 .buscarCategoria__li:hover {
@@ -252,6 +253,7 @@
     height: 740px;
     display: flex;
     flex-direction: column;
+    flex: 1 1 calc(50% - 24px);
     gap: 24px;
 }
 
@@ -354,6 +356,7 @@
     color: var(--white);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .footContent__div {
@@ -369,6 +372,11 @@
     margin-bottom: 15px;
 }
 
+.footContent__imgLogo {
+    width: 35%;
+    margin-bottom: 15px;
+}
+
 .footContent__caption {
     font-weight: 800;
     margin-bottom: 15px;
@@ -378,4 +386,179 @@
     display: flex;
     justify-content: center;
     gap: 15px;
+}
+
+
+/*  MEDIA QUERYES  */
+
+/* PANTALLAS 768 */
+.mainHeader__menuBtn {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    /*  CONTENEDOR DE BARRA NAVEGACION  */
+    .mainHeader__menuIcon {
+        display: block;
+        width: 32px;
+        height: 4px;
+        background-color: #ffffff;
+        margin: 6px 0;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .mainHeader__nav {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    .mainHeader__nav.open {
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 65%;
+        width: 30%;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        z-index: 10;
+        opacity: 1;
+    }
+
+    .mainHeader__nav.open ~ .mainHeader__logonavContainer {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .mainHeader__navList {
+        width: 175px;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /* estilos para reemplazar el logo del banner */
+    .mainHeader__aLink {
+        width: 10%;
+        height: 50%;
+    }
+    
+    .mainHeader__menuBtn {
+        display: block;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+
+    /* Cambios al hacer clic: transformar las líneas en un círculo */
+    .mainHeader__menuBtn.open .mainHeader__menuIcon {
+        background-color: transparent;
+        border: 2px solid white;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+    /* Rotación y transformación de las líneas */
+    .mainHeader__menuBtn.open .mainHeader__menuIcon:nth-child(1) {
+        opacity: 0;
+        display: none;
+    }
+
+    .mainHeader__menuBtn.open .mainHeader__menuIcon:nth-child(2) {
+        opacity: 1;
+    }
+
+    .mainHeader__menuBtn.open .mainHeader__menuIcon:nth-child(3) {
+        opacity: 0;
+        display: none;
+    }
+
+    .mainHeader__imgJornada {
+        content: url('/img/logo-webSite_mobile.png');
+        width: 80%;
+    }
+
+    /*  CONTENEDOR OFERTAS SEMANALES  */
+    .ofertaSem__fig--img {
+        width: 325px;
+        height: 270px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    /*  CONTENEDOR BUSCAR CATEGORIA  */
+    .buscarCategoria__li {
+        flex: 1 1 calc(50% - 24px); 
+    }
+
+    /*  CONTENEDOR DESTINOS POPULARES  */
+    .destinosP__ul {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .destinosP__image {
+        width: 530px;
+        height: 410px;
+    }
+
+    /*  CONDICIONES DE PAGO  */
+    .condicionesP__arti {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .condicionesP__sect {
+        width: 100%;
+    }
+
+    .condicionesP__div {
+        justify-content: center;
+    }
+
+    .condicionesP__imgS {
+        width: 330px;
+    }
+
+    .condicionesP__imgL {
+        width: 685px;
+    }
+
+    /*  CONTENEDOR TESTIMONIOS  */
+    .testimonio__div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonio__sect, .testimonio__text {
+        width: 100%;
+    }
+
+    .testimonio__text {
+        height: 40px;
+    }
+
+    /*  FOOTER PRINCIPAL  */
+    .footContent {
+        height: 280px;
+    }
+
+    .footContent__div {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footContent__sect {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footContent__imgLogo {
+        width: 25%;
+    }
 }
