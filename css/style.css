@@ -17,7 +17,7 @@
 }
 
 .mainHeader__logonavContainer {
-    width: var(--anchoGeneral);
+    width: var(--anchoGeneral__85);
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -41,7 +41,7 @@
 }
 
 .mainHeader__navList a {
-    font-size: var(--subTitleFont);
+    font-size: var(--SubTitleF__1-28);
     font-weight: 500;
     color: var(--white);
 }
@@ -61,19 +61,18 @@
 
 .bannerImg__figcap {
     margin: 92px 0;
-    width: var(--anchoGeneral);
+    width: var(--anchoGeneral__85);
 }
 
 .bannerImg__figcap p {
     text-align: center;
-    font-size: var(--titleFont);
+    font-size: var(--titleF__1-75);
     font-weight: 400;
 }
 
 /*  CONTENEDOR MAIN   */
 #mainContent {
-    border: 2px solid red;
-    width: var(--anchoGeneral);
+    width: var(--anchoGeneral__85);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +97,7 @@
 
 .headerSection--titulo {
     margin: 10px;
-    font-size: var(--titleFont);
+    font-size: var(--titleF__1-75);
 }
 
 .headerSection--hr {
@@ -150,7 +149,7 @@
 }
 
 .ofertaSem__fig--ha{
-    font-size: var(--generalFont);
+    font-size: var(--generalF__1-2);
 }
 
 .ofertaSem__fig--titulo, .ofertaSem__fig--price {
@@ -166,7 +165,7 @@
 }
 
 .ofertaSem__fig--button, .destinosP__button {
-    font-size: var(--generalFont);
+    font-size: var(--generalF__1-2);
     font-weight: 600;
     text-align: center;
     color: var(--white);
@@ -177,6 +176,17 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.ofertaSem__fig--button:hover, .destinosP__button:hover {
+    background-color: var(--darkRed);
+    transform: translateY(2px);
+}
+
+.ofertaSem__fig--button:active, .destinosP__button:active {
+    background-color: var(--lightRed);
+    transform: translateY(-2px);
 }
 
 /*  separador entre seccion oferta y buscar catergoria  */
@@ -197,9 +207,14 @@
     background-color: var(--darkWhite);
     width: 255.25px;
     height: 185px;
+    align-items: center;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.buscarCategoria__li:hover {
+    background-color: var(--lightGrey);
 }
 
 .buscarCategoria__figure {
@@ -218,7 +233,7 @@
 .buscarCategoria__caption {
     width: 210.25px;
     height: 60px;
-    font-size: var(--elementFont);
+    font-size: var(--elementF__1-45);
     font-weight: bold;
     text-align: center;
     color: var(--black);
@@ -231,7 +246,6 @@
 }
 
 .destinosP__li {
-    width: 595px;
     height: 740px;
     display: flex;
     flex-direction: column;
@@ -247,21 +261,24 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: 535px;
 }
 
 .destinosP__title, .condicionesP__title {
-    font-size: var(--elementFont);
+    font-size: var(--elementF__1-45);
 }
 
 .destinosP__text, .condicionesP__text {
-    font-size: var(--generalFont);
+    font-size: var(--generalF__1-2);
+    text-align: justify;
 }
 
 /*  CONTENEDOR CONDICIONES DE PAGO  */
-.condicionesP {
+.condicionesP__arti {
     width: 100%;
     display: flex;
     justify-content: center;
+    gap: 24px;
 }
 
 .condicionesP__sect {
@@ -283,4 +300,40 @@
 .condicionesP__div {
     display: flex;
     gap: 24px;
+}
+
+/*  CONTENEDOR TESTIMONIOS  */
+.testimonio__div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.testimonio__sect {
+    width: 380px;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.testimonio__text {
+    width: 380px;
+    height: 74px;
+}
+
+.testimonio__fig {
+    display: flex;
+    gap: 24px;
+}
+
+.testimonio__caption {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.testimonio__user {
+    font-size: var(--elementF__1-45);
 }

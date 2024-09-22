@@ -10,6 +10,8 @@
 
  html {
     line-height: 1.15; /* 1 */
+    word-spacing: 0.05em;
+    letter-spacing: 0.02em;
   }
   
   /* Sections

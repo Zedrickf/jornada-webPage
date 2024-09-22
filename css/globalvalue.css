@@ -3,17 +3,18 @@
 :root {
     --darkRed: #8f0101;
     --red: #b81515;
+    --lightRed: #ff3030;
     --black: #000000;
     --darGrey: #222222;
     --grey: #8c8c8c;
     --lightGrey: #d9d9d9;
     --darkWhite: #f5f5f5;
     --white: #ffffff;
-    --anchoGeneral: 85%;
-    --titleFont: 1.75rem;
-    --subTitleFont: 1.28rem;
-    --generalFont: 1.2rem;
-    --elementFont: 1.45rem
+    --anchoGeneral__85: 85%;
+    --titleF__1-75: 1.75rem;
+    --subTitleF__1-28: 1.28rem;
+    --generalF__1-2: 1.2rem;
+    --elementF__1-45: 1.45rem
 }
 
 * {
