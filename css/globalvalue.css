@@ -10,10 +10,10 @@
     --darkWhite: #f5f5f5;
     --white: #ffffff;
     --anchoGeneral: 85%;
-    --titleFont: 2rem;
+    --titleFont: 1.75rem;
     --subTitleFont: 1.28rem;
-    --generalFont: 1.25rem;
-    --elementFont: 1.75rem
+    --generalFont: 1.2rem;
+    --elementFont: 1.45rem
 }
 
 * {
