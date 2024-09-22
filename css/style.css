@@ -9,7 +9,7 @@
 .mainHeader {
     background-color: var(--black);
     width: 100%;
-    height: 6.25rem;
+    height: 8.25rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -30,7 +30,7 @@
 }
 
 .mainHeader__imgJornada {
-    width: 75%;
+    width: 65%;
 }
 
 .mainHeader__navList {
@@ -41,13 +41,17 @@
 }
 
 .mainHeader__navList a {
-    font-size: var(--SubTitleF__1-28);
+    font-size: var(--elementF__1-45);
     font-weight: 500;
     color: var(--white);
 }
 
 /*  CONTENEDOR IMAGEN DE PRESENTACION  */
 .bannerImg {
+    width: 100%;
+}
+
+.bannerImg__fig {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -56,15 +60,14 @@
 
 .bannerImg__image {
     width: 100%;
-    height: 45.5vh;
 }
 
-.bannerImg__figcap {
+.bannerImg__caption {
     margin: 92px 0;
     width: var(--anchoGeneral__85);
 }
 
-.bannerImg__figcap p {
+.bannerImg__caption p {
     text-align: center;
     font-size: var(--titleF__1-75);
     font-weight: 400;
@@ -336,4 +339,43 @@
 
 .testimonio__user {
     font-size: var(--elementF__1-45);
+}
+
+/*  CONTENEDOR IMAGEN  */
+.imagenFoot {
+    width: 100%;
+}
+
+/*  FOOTER PRINCIPAL  */
+.footContent {
+    width: 100%;
+    background-color: var(--black);
+    height: 232px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+}
+
+.footContent__div {
+    width: var(--anchoGeneral__85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footContent__sect h4 {
+    font-size: var(--generalF__1-2);
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.footContent__caption {
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.footContent__divLogo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }

@@ -30,11 +30,11 @@
     </header>
 
     <!-- CONTENEDOR IMAGEN DE PRESENTACION -->
-    <section aria-labelledby="sobre-nosotros-title">
+    <section class="bannerImg" aria-labelledby="sobre-nosotros-title">
         <div>
-            <figure class="bannerImg">
+            <figure class="bannerImg__fig">
                 <img class="bannerImg__image" src="./img/banner-body.png" alt="Hombre navegando a través de un río en el bosque"/>
-                <figcaption class="bannerImg__figcap">
+                <figcaption class="bannerImg__caption">
                     <h2 id="sobre-nosotros-title" style="display: none">Sobre Nosotros</h2>
                     <p>
                         Somos una agencia apasionada por crear viajes inolvidables. Desde el destino hasta la selección
@@ -271,28 +271,30 @@
 
     </main>
 
-    <section aria-label="imagen-footer">
-        <div>
-            <figure>
-                <img src="./img/Image-footer.png" alt="Vista a la costa de una ciudad" style="width:100%" />
-            </figure>
-        </div>
+    <!-- CONTENEDOR IMAGEN -->
+    <section class="imagenFoot" aria-label="imagen-footer">
+        <figure>
+            <img src="./img/Image-footer.png" alt="Vista a la costa de una ciudad" style="width:100%;margin-bottom: -5px;" />
+        </figure>
     </section>
     
-    <footer>
-        <section>
-            <h4>Horario de Atencion: 08h - 20h (Lunes a Sabado).</h4>
-            <h4>Desarrollado por Anthony Marin. Proyecto ficticio sin fines de lucro.</h4>
-        </section>
-
-        <figure>
-            <figcaption>Accede a nuestras redes sociales</figcaption>
-            <div>
-                <img src="./img/iconWhatsapp.png" alt="Logo de Whatsapp">
-                <img src="./img/iconInstragam.png" alt="Logo de Instagram">
-                <img src="./img/iconTwiter.png" alt="Logo de X">
-            </div>
-        </figure>
+    <!-- FOOTER PRINCIPAL -->
+    <footer class="footContent">
+        <div class="footContent__div">
+            <section class="footContent__sect">
+                <h4>Horario de Atencion: 08h - 20h (Lunes a Sabado).</h4>
+                <h4>Desarrollado por Anthony Marin. Proyecto ficticio sin fines de lucro.</h4>
+            </section>
+    
+            <figure class="footContent__fig">
+                <figcaption class="footContent__caption">Accede a nuestras redes sociales</figcaption>
+                <div class="footContent__divLogo">
+                    <img src="./img/iconWhatsapp.png" alt="Logo de Whatsapp">
+                    <img src="./img/iconInstragam.png" alt="Logo de Instagram">
+                    <img src="./img/iconTwiter.png" alt="Logo de X">
+                </div>
+            </figure>
+        </div>
     </footer>
 
 </body>
