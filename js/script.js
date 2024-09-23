@@ -21,3 +21,15 @@ document.addEventListener("DOMContentLoaded", function() {
         menuBtn.classList.toggle("open"); // Esto aplica la transformación de las líneas
     });
 });
+
+
+//cambia el tamaño del header cuando se hace scroll hacia abajo
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("mainH").style.height = "6.5rem";
+    } else {
+      document.getElementById("mainH").style.height = "8.25rem";
+    }
+  }
