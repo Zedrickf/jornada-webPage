@@ -33,3 +33,14 @@ function scrollFunction() {
       document.getElementById("mainH").style.height = "8.25rem";
     }
   }
+
+
+//cambia el logo cuando la pantalla llega a 1024px 
+window.addEventListener('resize', function() {
+    const img = document.querySelector('.mainHeader__imgJornada');
+    if (window.innerWidth <= 1024) {
+        img.src = './logo-webSite_mobile.png'; // Cambia a la imagen deseada
+    } else {
+        img.src = './logo-webSite_mobile.png'; // La imagen original
+    }
+});
