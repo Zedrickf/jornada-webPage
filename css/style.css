@@ -465,10 +465,6 @@
 
     /* estilos para reemplazar el logo del banner */
     
-    .mainHeader__imgJornada {
-        width: 80%;
-    }
-
     .mainHeader__aLink {
         width: 10%;
         height: 50%;
@@ -587,4 +583,62 @@
     .footContent__imgLogo {
         width: 25%;
     }
+}
+
+@media screen and (max-width: 540px) {
+    
+    /*  CONTENEDOR DE BARRA NAVEGACION  */
+    .mainHeader__aLink {
+        width: 10%;
+    }
+
+    .mainHeader__nav.open {
+        left: 57.8%;
+        width: 35%;
+    }
+
+    /* CONTENEDOR OFERTAS SEMANALES */
+    .ofertaSem__div {
+        flex-wrap: wrap;
+    }
+    
+    /* CONTENEDOR DESTINOS POPULARES */
+    /* .destinosP__fig {
+
+    } */
+    
+    .destinosP__image,
+    .destinosP__caption,
+    .destinosP__text
+     {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    
+    /*  CONTENEDOR DE BARRA NAVEGACION  */
+    .mainHeader__nav.open {
+        left: 43.8%;
+        width: 45%;
+    }
+
+    /* CONTENEDOR OFERTAS SEMANALES */
+    .ofertaSem__div {
+        flex-wrap: wrap;
+    }
+    
+    /* CONTENEDOR CONDICIONES DE PAGO */
+    .condicionesP__imgS {
+        width: 144px;
+        height: 254px;
+        object-fit: cover;
+    }
+
+    .condicionesP__imgL {
+        width: 312px;
+        height: 180px;
+    }
+
 }
