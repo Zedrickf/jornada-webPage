@@ -41,6 +41,6 @@ window.addEventListener('resize', function() {
     if (window.innerWidth <= 1024) {
         img.src = './logo-webSite_mobile.png'; // Cambia a la imagen deseada
     } else {
-        img.src = './logo-webSite_mobile.png'; // La imagen original
+        img.src = './img/logo-webSide.png'; // La imagen original
     }
 });
