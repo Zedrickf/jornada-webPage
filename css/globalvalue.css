@@ -17,6 +17,17 @@
     --elementF__1-45: 1.45rem
 }
 
+
+/*  cambio el tamaño de las letras en relacion al ancho de pantalla de 375px  */
+@media screen and (max-width: 375px) {
+    :root {
+        --titleF__1-75: 1.45rem;
+        --subTitleF__1-28: 1.08rem;
+        --generalF__1-2: 1rem;
+        --elementF__1-45: 1.25rem
+    }
+}
+
 * {
     font-family: 'Monserrat', sans-serif;
     box-sizing: border-box;

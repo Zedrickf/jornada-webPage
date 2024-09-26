@@ -413,6 +413,10 @@
 @media screen and (max-width: 1024px) {
 
     /*  CONTENEDOR DE BARRA NAVEGACION  */
+    .mainHeader {
+        height: 6.5rem;
+    }
+
     .mainHeader__menuIcon {
         display: block;
         width: 32px;
@@ -538,6 +542,11 @@
         width: 100%;
     }
 
+    .condicionesP__fig {
+        width: auto;
+        height: auto;
+    }
+
     .condicionesP__div {
         justify-content: center;
     }
@@ -581,7 +590,7 @@
     }
 
     .footContent__imgLogo {
-        width: 25%;
+        width: 40%;
     }
 }
 
@@ -614,9 +623,15 @@
         width: 400px;
     }
 
+    /*  CONDICIONES DE PAGO  */
+    .condicionesP__imgL {
+        max-width: 100%;
+        height: auto;
+    }
+
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
     
     /*  CONTENEDOR DE BARRA NAVEGACION  */
     .mainHeader__nav.open {
@@ -630,6 +645,10 @@
     }
     
     /* CONTENEDOR CONDICIONES DE PAGO */
+    .condicionesP__fig {
+        width: auto;
+    }
+
     .condicionesP__imgS {
         width: 144px;
         height: 254px;
@@ -637,8 +656,74 @@
     }
 
     .condicionesP__imgL {
-        width: 312px;
-        height: 180px;
+        max-width: 90%;
+        height: auto;
+    }
+
+    /*  CONTENEDOR TESTIMONIOS  */
+
+    .testimonio__sect, .testimonio__text {
+        gap: 25px;
+    }
+        
+    .testimonio__text {
+        height: auto;
+    }
+        
+}
+
+@media screen and (max-width: 390px) {
+
+    /*  CONTENEDOR BARRA DE NAVEGACION  */
+    .mainHeader {
+        height: 5.5rem;
+    }
+
+    .headerSection--titulo {
+        margin: 10px 0;
+        font-size: 24px;
+    }
+    
+    /*  CONTENEDOR OFERTAS SEMANALES  */
+    .ofertaSem__fig--img {
+        width: 300px;
+    }
+
+    /*  CONTENEDOR DESTINOS POPULARES  */
+    .destinosP__image,
+    .destinosP__caption,
+    .destinosP__text
+     {
+        width: 300px;
+    }
+
+    .destinosP__image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /*  CONTENEDOR CONDICIONES DE PAGO  */
+    .condicionesP__fig {
+        height: auto;
+    }
+    
+    .condicionesP__imgS {
+        width: 125px;
+    }
+
+    .condicionesP__imgL {
+        max-width: 100%;
+    }
+
+    /*  CONDICIONES TESTIMONIOS  */
+
+    .testimonio__avatarImg {
+        max-width: 24%;
+        height: auto;
+    }
+
+    .testimonio__starDiv img{
+        width: 23px;
     }
 
 }

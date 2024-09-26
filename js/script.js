@@ -27,12 +27,14 @@ document.addEventListener("DOMContentLoaded", function() {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById("mainH").style.height = "6.5rem";
-    } else {
-      document.getElementById("mainH").style.height = "8.25rem";
+    if (window.innerWidth >= 1024) { 
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("mainH").style.height = "6.5rem";
+        } else {
+            document.getElementById("mainH").style.height = "8.25rem";
+        }
     }
-  }
+}
 
 
 //cambia el logo cuando la pantalla llega a 1024px 
