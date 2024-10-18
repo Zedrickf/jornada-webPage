@@ -410,7 +410,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
 
     /*  CONTENEDOR DE BARRA NAVEGACION  */
     .mainHeader {
