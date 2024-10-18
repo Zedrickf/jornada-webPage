@@ -41,7 +41,7 @@ function scrollFunction() {
 window.addEventListener('resize', function() {
     const img = document.querySelector('.mainHeader__imgJornada');
     if (window.innerWidth <= 1024) {
-        img.src = './logo-webSite_mobile.png'; // Cambia a la imagen deseada
+        img.src = './img/logo-webSite_mobile.png'; // Cambia a la imagen deseada
     } else {
         img.src = './img/logo-webSide.png'; // La imagen original
     }
